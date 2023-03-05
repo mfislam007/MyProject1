@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from "react";
+import ListCard from './Components/ListCard';
+import ManuBar from './Components/ManuBar';
+import FootBar from './Components/FootBar';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = "Manubar">
+       <ManuBar/>
+     </div>
+      <div className = "Listcard">
+       <ListCard/> 
+       <ListCard/> 
+       <ListCard/> 
+      </div>
+      <div className = "Footer">
+      <FootBar/>
+      </div>
     </div>
   );
 }
